@@ -1,0 +1,48 @@
+extends:
+  - eslint:recommended
+  - next
+  - next/core-web-vitals
+  - plugin:react/recommended
+  - plugin:import/errors
+  - plugin:import/warnings
+  - prettier
+
+parser: '@typescript-eslint/parser'
+
+plugins:
+  - '@typescript-eslint'
+  - react
+  - import
+
+rules:
+  # `var`を使ったら怒るよ
+  no-var: error
+
+  # セミコロン抜かないで
+  semi: error
+
+  # `==` とかを使わないでね
+  eqeqeq: error
+
+  # カンマのあとはスペースを入れてくれ
+  comma-spacing: error
+
+  # インデントはtabで守ってね
+  indent:
+    - error
+    - tab
+
+  # `console.log`は消しておいて
+  no-console: error
+
+  # ブロック演算子はスペース入れてね
+  block-spacing: error
+
+  # 演算子の前後のスペースは絶対抜かないで
+  space-infix-ops: error
+
+  # アロー演算子前後のスペース強制
+  arrow-spacing: error
+
+  # タブとスペースを混ぜないで
+  no-mixed-spaces-and-tabs: error
