@@ -1,4 +1,4 @@
-type columnSizes =
+type columnSize =
 	| 'is-1'
 	| 'is-2'
 	| 'is-3'
@@ -31,7 +31,7 @@ declare module 'bulmaElementSpecs' {
 
 		// Put column size specify if needed
 		// @see https://bulma.io/documentation/columns/sizes/
-		size?: columnSizes;
+		size?: columnSize;
 
 		// Require children nodes
 		children: React.ReactNode;
