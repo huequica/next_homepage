@@ -2,3 +2,4 @@ yarn.lock
 .next
 .vscode
 *.json
+node_modules
