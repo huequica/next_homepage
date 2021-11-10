@@ -16,7 +16,7 @@
     "incremental": true,
     "baseUrl": ".",
     "paths": {
-      "@bulmaElements/*": ["bulmaElements/*"],
+      "@bulmaElements/*": ["./bulmaElements/*"],
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
