@@ -32,6 +32,11 @@ rules:
     - error
     - tab
 
+  # シングルクォートで統一
+  quotes:
+    - warn
+    - single
+
   # `console.log`は消しておいて
   no-console: error
 
