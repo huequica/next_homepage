@@ -1,7 +1,11 @@
 import React from 'react';
-import { titleSpecs } from 'bulmaElementSpecs';
+import { title } from 'bulmaElementSpecs';
 
-const Title: React.VFC<titleSpecs> = (props: titleSpecs) => {
+/**
+ * Title( `<h1>` ) element render
+ * @see https://bulma.io/documentation/elements/title/
+ */
+const Title: React.VFC<title> = (props: title) => {
 	const contents = props.children;
 	const titleClasses = [props.subTitle ? 'subtitle' : 'title'];
 

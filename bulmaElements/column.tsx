@@ -1,11 +1,11 @@
 import React from 'react';
-import { columnSpecs } from 'bulmaElementSpecs';
+import { column } from 'bulmaElementSpecs';
 
 /**
  * Build Column(Columns) Element
  * @see https://bulma.io/documentation/columns/basics/
  */
-const Column: React.VFC<columnSpecs> = (props: columnSpecs) => {
+const Column: React.VFC<column> = (props: column) => {
 	const classNames = [props.isParent ? 'columns' : 'column'];
 
 	if (props.size) classNames.push(props.size);
