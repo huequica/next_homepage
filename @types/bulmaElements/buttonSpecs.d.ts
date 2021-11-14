@@ -17,4 +17,12 @@ declare module 'bulmaElementSpecs' {
 
 		children: React.ReactNode;
 	}
+
+	export interface buttonsGroup {
+		// contain buttons specify
+		// @see https://bulma.io/documentation/elements/button/#sizes
+		size?: 'small' | 'medium' | 'large';
+
+		children: React.ReactNode;
+	}
 }

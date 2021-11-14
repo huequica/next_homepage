@@ -1,5 +1,5 @@
 import React from 'react';
-import { button } from 'bulmaElementSpecs';
+import { button, buttonsGroup } from 'bulmaElementSpecs';
 
 /**
  * button component
@@ -15,4 +15,15 @@ const Button: React.VFC<button> = (props: button) => {
 	return <button className={classNames.join(' ')}>{props.children}</button>;
 };
 
-export { Button };
+/**
+ * Button group container
+ * @see https://bulma.io/documentation/elements/button/#sizes
+ */
+const ButtonsGroup: React.VFC<buttonsGroup> = ({ size }: buttonsGroup) => {
+	const classNames = ['buttons'];
+	if (size) classNames.push(`are-${size}`);
+
+	return <div className={classNames.join(' ')}></div>;
+};
+
+export { Button, ButtonsGroup };
