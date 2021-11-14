@@ -25,7 +25,7 @@ type columnSize =
 declare module 'bulmaElementSpecs' {
 	import React from 'react';
 
-	export interface columnSpecs {
+	export interface column {
 		// Use this props when render containers parent
 		isParent?: boolean;
 
