@@ -13,6 +13,8 @@ declare module 'bulmaElementSpecs' {
 		// @see https://bulma.io/documentation/elements/button/#sizes
 		size?: 'small' | 'normal' | 'medium' | 'large';
 
+		isFullWidth?: boolean;
+
 		children: React.ReactNode;
 	}
 }
