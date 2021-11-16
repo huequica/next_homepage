@@ -1,5 +1,6 @@
 import React from 'react';
 import { title } from 'bulmaElementSpecs';
+import is from 'viewLogics/is';
 
 /**
  * Title( `<h1>` ) element render
@@ -10,7 +11,7 @@ const Title: React.VFC<title> = (props: title) => {
 	const titleClasses = [props.subTitle ? 'subtitle' : 'title'];
 
 	// size specification
-	titleClasses.push(props.is ? `is-${props.is}` : 'is-3');
+	if (props.is) titleClasses.push(is(props.is));
 
 	return <h1 className={titleClasses.join(' ')}>{contents}</h1>;
 };
