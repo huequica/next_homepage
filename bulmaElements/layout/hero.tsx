@@ -1,8 +1,7 @@
 import React from 'react';
 import { hero } from 'bulmaSpecs';
 
-/**
- * Hero classes decider
+/** Hero classes decider
  * @returns decided classes
  */
 const heroStyleDecide = (props: hero, baseClasses: string[]): string[] => {
@@ -12,9 +11,8 @@ const heroStyleDecide = (props: hero, baseClasses: string[]): string[] => {
 	return modifiedClasses;
 };
 
-/**
- * Title( `<section class='hero'>` ) element render
- * https://bulma.io/documentation/layout/hero/
+/** Title( `<section class='hero'>` ) element render
+ * @see https://bulma.io/documentation/layout/hero/
  */
 const Hero: React.VFC<hero> = (props: hero) => {
 	const classNames = heroStyleDecide(props, ['hero']);
