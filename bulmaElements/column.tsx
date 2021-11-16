@@ -1,5 +1,6 @@
 import React from 'react';
 import { column } from 'bulmaElementSpecs';
+import is from 'viewLogics/is';
 
 /**
  * Build Column(Columns) Element
@@ -8,7 +9,7 @@ import { column } from 'bulmaElementSpecs';
 const Column: React.VFC<column> = (props: column) => {
 	const classNames = [props.isParent ? 'columns' : 'column'];
 
-	if (props.size) classNames.push(props.size);
+	if (props.size) classNames.push(is(props.size));
 
 	return <div className={classNames.join(' ')}>{props.children}</div>;
 };
