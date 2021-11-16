@@ -8,6 +8,5 @@ declare module 'bulmaElementSpecs' {
 	export interface iconText {
 		icon: IconDefinition;
 		text: string;
-		inButton?: boolean;
 	}
 }
