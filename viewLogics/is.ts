@@ -2,6 +2,6 @@
  * @param query injection parameter
  * @returns className
  */
-const is = (query: string): string => `is-${query}`;
+const is = (query: string | number): string => `is-${query}`;
 
 export default is;
