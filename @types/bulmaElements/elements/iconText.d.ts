@@ -1,11 +1,12 @@
 declare module 'bulmaElementSpecs' {
+	import { IconDefinition } from '@fortawesome/fontawesome-common-types';
 	export interface baseElement {
-		icon: any; // あとで変える
+		icon: IconDefinition;
 		text: string;
 	}
 
 	export interface iconText {
-		icon: any; // あとで変える
+		icon: IconDefinition;
 		text: string;
 		inButton?: boolean;
 	}
