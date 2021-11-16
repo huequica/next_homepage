@@ -2,6 +2,9 @@ import React from 'react';
 import { baseElement, iconText } from 'bulmaElementSpecs';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
+/** Unwrap `span.icon-text` when use for button label
+ * @see https://bulma.io/documentation/elements/button/#states
+ */
 const Base: React.VFC<baseElement> = ({ icon, text }: baseElement) => (
 	<>
 		<span className='icon'>
