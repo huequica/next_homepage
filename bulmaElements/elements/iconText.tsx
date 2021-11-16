@@ -1,18 +1,28 @@
 import React from 'react';
-import { baseElement, iconText } from 'bulmaElementSpecs';
+import { iconTextInButton, iconText } from 'bulmaElementSpecs';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import is from 'viewLogics/is';
 
-const IconTextInButton: React.VFC<baseElement> = ({
+/** Wrap `span.icon` for use button label
+ * @see https://bulma.io/documentation/elements/button/#states
+ */
+const IconTextInButton: React.VFC<iconTextInButton> = ({
 	icon,
 	text,
-}: baseElement) => (
-	<>
-		<span className='icon'>
-			<FontAwesomeIcon icon={icon} />
-		</span>
-		<span>{text}</span>
-	</>
-);
+	size,
+}: iconTextInButton) => {
+	const classNames = ['icon'];
+	if (size) classNames.push(is(size));
+
+	return (
+		<>
+			<span className={classNames.join(' ')}>
+				<FontAwesomeIcon icon={icon} />
+			</span>
+			<span>{text}</span>
+		</>
+	);
+};
 
 /** Render text with icon
  * @see https://bulma.io/documentation/elements/icon/
