@@ -1,4 +1,4 @@
-declare module 'bulmaSpecs' {
+declare module 'bulmaElementSpecs' {
 	import React from 'react';
 	export interface hero {
 		// change hero color
