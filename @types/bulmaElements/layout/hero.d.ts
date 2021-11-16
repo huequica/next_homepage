@@ -17,4 +17,12 @@ declare module 'bulmaSpecs' {
 
 		children: React.ReactNode;
 	}
+
+	export interface heroParts {
+		// contain position
+		// @see https://bulma.io/documentation/layout/hero/#fullheight-hero-in-3-parts
+		position: 'head' | 'body' | 'foot';
+
+		children: React.ReactNode;
+	}
 }
