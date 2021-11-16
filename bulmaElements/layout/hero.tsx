@@ -1,13 +1,14 @@
 import React from 'react';
 import { hero, heroParts } from 'bulmaSpecs';
+import is from 'viewLogics/is';
 
 /** Hero classes decider
  * @returns decided classes
  */
 const heroStyleDecide = (props: hero, baseClasses: string[]): string[] => {
 	const modifiedClasses = baseClasses;
-	if (props.color) modifiedClasses.push(`is-${props.color}`);
-	if (props.size) modifiedClasses.push(`is-${props.size}`);
+	if (props.color) modifiedClasses.push(is(props.color));
+	if (props.size) modifiedClasses.push(is(props.size));
 	return modifiedClasses;
 };
 
