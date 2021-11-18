@@ -1,5 +1,5 @@
 import React from 'react';
-import { intent } from 'localComponentSpecs';
+import type { intent } from 'localComponentSpecs';
 import is from 'viewLogics/is';
 
 const Intent: React.VFC<intent> = ({ children, link, color }: intent) => {

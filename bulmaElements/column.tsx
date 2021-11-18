@@ -1,5 +1,5 @@
 import React from 'react';
-import { column } from 'bulmaElementSpecs';
+import type { column } from 'bulmaElementSpecs';
 import is from 'viewLogics/is';
 
 /**

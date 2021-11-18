@@ -1,5 +1,5 @@
 import React from 'react';
-import { iconTextInButton, iconText } from 'bulmaElementSpecs';
+import type { iconTextInButton, iconText } from 'bulmaElementSpecs';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import is from 'viewLogics/is';
 
