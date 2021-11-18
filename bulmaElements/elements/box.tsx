@@ -1,5 +1,5 @@
 import React from 'react';
-import { box } from 'bulmaElementSpecs';
+import type { box } from 'bulmaElementSpecs';
 /**
  * Element contain box component
  * @see https://bulma.io/documentation/elements/box/

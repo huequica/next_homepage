@@ -1,5 +1,5 @@
 import React from 'react';
-import { layout } from 'localComponentSpecs';
+import type { layout } from 'localComponentSpecs';
 import NavBar from 'components/navbar';
 
 const Layout: React.VFC<layout> = ({ children, disableMargin }: layout) => {

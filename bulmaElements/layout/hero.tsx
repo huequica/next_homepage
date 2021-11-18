@@ -1,5 +1,5 @@
 import React from 'react';
-import { hero, heroParts } from 'bulmaElementSpecs';
+import type { hero, heroParts } from 'bulmaElementSpecs';
 import is from 'viewLogics/is';
 
 /** Hero classes decider

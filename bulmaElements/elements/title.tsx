@@ -1,5 +1,5 @@
 import React from 'react';
-import { title } from 'bulmaElementSpecs';
+import type { title } from 'bulmaElementSpecs';
 import is from 'viewLogics/is';
 
 /**
