@@ -7,7 +7,7 @@ const Layout: React.VFC<layout> = ({ children, disableMargin }: layout) => {
 		<>
 			<NavBar />
 			{disableMargin ? (
-				{ children }
+				children
 			) : (
 				<section className='section'>{children}</section>
 			)}

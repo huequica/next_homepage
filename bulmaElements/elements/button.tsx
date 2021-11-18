@@ -1,5 +1,5 @@
 import React from 'react';
-import { button, buttonsGroup } from 'bulmaElementSpecs';
+import type { button, buttonsGroup } from 'bulmaElementSpecs';
 import is from 'viewLogics/is';
 /**
  * button component

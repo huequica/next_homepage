@@ -7,15 +7,15 @@ import { faTwitter } from '@fortawesome/free-brands-svg-icons';
 const NavBarItems: React.VFC = () => (
 	<div className='navbar-start'>
 		<Link href='/about'>
-			<a className='navbar-itm'>📝About</a>
+			<a className='navbar-item'>📝About</a>
 		</Link>
 
 		<Link href='/dev'>
-			<a className='navbar-itm'>💻Develop</a>
+			<a className='navbar-item'>💻Develop</a>
 		</Link>
 
 		<Link href='/works'>
-			<a className='navbar-itm'>💼Works</a>
+			<a className='navbar-item'>💼Works</a>
 		</Link>
 	</div>
 );
