@@ -1,6 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
-import { meta } from 'localComponentSpecs';
+import type { meta } from 'localComponentSpecs';
 
 const Meta: React.VFC<meta> = (props: meta) => {
 	const title = props.title || 'huequica.xyz';
