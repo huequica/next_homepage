@@ -3,7 +3,19 @@ declare module 'bulmaElementSpecs' {
 	export interface button {
 		// change button color
 		// @see https://bulma.io/documentation/elements/button/#colors
-		color?: 'primary' | 'link' | 'info' | 'success' | 'warning' | 'danger';
+		color?:
+			| 'primary'
+			| 'link'
+			| 'info'
+			| 'success'
+			| 'warning'
+			| 'danger'
+			| 'white'
+			| 'light'
+			| 'dark'
+			| 'black'
+			| 'text'
+			| 'ghost';
 
 		// change button style
 		// @see https://bulma.io/documentation/elements/button/#styles
