@@ -1,21 +1,10 @@
 declare module 'bulmaElementSpecs' {
 	import React from 'react';
+	import { colors } from 'bulmaElementSpecs';
 	export interface button {
 		// change button color
 		// @see https://bulma.io/documentation/elements/button/#colors
-		color?:
-			| 'primary'
-			| 'link'
-			| 'info'
-			| 'success'
-			| 'warning'
-			| 'danger'
-			| 'white'
-			| 'light'
-			| 'dark'
-			| 'black'
-			| 'text'
-			| 'ghost';
+		color?: colors;
 
 		// change button style
 		// @see https://bulma.io/documentation/elements/button/#styles
