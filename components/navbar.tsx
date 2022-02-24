@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { Elements } from '@bulma';
 import Intent from 'components/intent';
 import { faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { useNavbar } from 'components/navbar.hooks';
 
 const NavBarItems: React.VFC = () => (
 	<div className='navbar-start'>
@@ -36,12 +37,7 @@ const NavBarEnd: React.VFC = () => (
 );
 
 const NavBar: React.VFC = () => {
-	const [isOpen, setOpen] = React.useState(false);
-
-	const toggleNavBarOpen = React.useCallback(
-		() => setOpen((prev) => !prev),
-		[setOpen],
-	);
+	const hooks = useNavbar();
 
 	return (
 		<nav className='navbar' role='navigation' aria-label='main navigation'>
@@ -52,10 +48,10 @@ const NavBar: React.VFC = () => {
 
 				<a
 					role='button'
-					className={`navbar-burger${isOpen ? ' is-active' : ''}`}
+					className={hooks.burgerClassName}
 					aria-label='menu'
 					aria-expanded='false'
-					onClick={toggleNavBarOpen}
+					onClick={hooks.toggleNavBarOpen}
 				>
 					<span aria-hidden='true' />
 					<span aria-hidden='true' />
@@ -63,7 +59,7 @@ const NavBar: React.VFC = () => {
 				</a>
 			</div>
 
-			<div className={`navbar-menu${isOpen ? ' is-active' : ''}`}>
+			<div className={hooks.menuClassName}>
 				<NavBarItems />
 				<NavBarEnd />
 			</div>
